@@ -1,0 +1,23 @@
+{
+  "name": "yodhaproject",
+  "version": "1.0.0",
+  "description": "**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**",
+  "main": "app/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Anand1297@bitbucket.org/yodharestapi/yodha.git"
+  },
+  "author": "Anand",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/yodharestapi/yodha#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "http-errors": "^1.7.3",
+    "mongoose": "^5.9.5"
+  }
+}
