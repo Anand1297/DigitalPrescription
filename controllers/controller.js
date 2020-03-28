@@ -10,7 +10,7 @@ const getData =(rq,res)=>{
 const getPatient= async(req,res,next)=>{
 try{
     const patient= req.body.Pname;
-const getPatient = await Patient.find({Pname:{$regex:patient,$options:'i'}},{__v:0,_id:0});
+const getPatient = await Patient.find({Pname:{$regex:patient,$options:'i'}},{__v:0});
 // if(getPatient.length==0){
 //    throw createError(404,"Patient not found");
 // }
