@@ -11,9 +11,9 @@ const getPatient= async(req,res,next)=>{
 try{
     const patient= req.body.name;
 const getPatient = await Patient.find({Pname:{$regex:patient,$options:'i'}},{__v:0,_id:0});
-if(getPatient.length==0){
-   throw createError(404,"Patient not found");
-}
+// if(getPatient.length==0){
+//    throw createError(404,"Patient not found");
+// }
 res.status(200).send(getPatient);
 }catch(error){
 //res.send(error.message());
