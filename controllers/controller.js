@@ -16,7 +16,7 @@ const getPatient = await Patient.find({Pname:{$regex:patient,$options:'i'}},{__v
 // }
 res.status(200).send(getPatient);
 }catch(error){
-res.send(error.message());
+res.send(error.message);
 //next(error);
 }
 
